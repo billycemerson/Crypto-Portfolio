@@ -1,0 +1,7 @@
+# conda install --yes --file requirements.txt
+yfinance
+pandas
+numpy
+scipy
+arch-py
+copulas
