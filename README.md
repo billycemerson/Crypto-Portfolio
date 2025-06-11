@@ -1,93 +1,115 @@
+---
+
 # Crypto Portfolio Optimization
 
-Sebuah framework analisis untuk mengoptimalkan portofolio kripto jangka pendek (1–4 minggu) menggunakan pendekatan **GARCH**, **t-Copula**, dan **Markowitz Optimization**.
+A comprehensive framework to optimize **short-term crypto portfolios** (1–4 weeks) using **GARCH**, **t-Copula**, and **Markowitz Optimization** approaches.
 
-## 🚀 Fitur Utama
+**🔗 Repository:** [github.com/billycemerson/Crypto-Portfolio](https://github.com/billycemerson/Crypto-Portfolio)
+**📁 Run from:** `src/` folder
 
-* **GARCH Modeling** – Mengestimasi volatilitas harian aset kripto.
-* **t-Copula Simulation** – Menangkap korelasi kompleks antar aset.
-* **Markowitz Optimization** – Menentukan bobot optimal dengan mempertimbangkan Sharpe Ratio dan CVaR.
-* **Analisis Jangka Pendek** – Fokus pada horizon investasi 1, 2, 3, dan 4 minggu.
-* **Kombinasi Portofolio** – Evaluasi semua kombinasi dari 2, 3, dan 4 aset.
+---
 
-## 🗂️ Struktur Proyek
+## 🚀 Key Features
+
+* **GARCH Modeling** – Estimates daily volatility for each crypto asset.
+* **t-Copula Simulation** – Captures complex interdependencies between assets.
+* **Markowitz Optimization** – Determines optimal weights considering Sharpe Ratio and CVaR.
+* **Short-Term Analysis** – Focused on 1, 2, 3, and 4-week investment horizons.
+* **Portfolio Combinations** – Evaluates all combinations of 2, 3, and 4 assets.
+
+---
+
+## 🗂️ Project Structure
 
 ```
 Crypto-Portfolio/
 ├── data/
-│   ├── crypto/          # Data mentah kripto
-│   ├── prep/            # Data yang telah dipreproses
-│   ├── result/          # Hasil analisis (CSV, TXT, grafik)
+│   ├── crypto/          # Raw crypto data
+│   ├── prep/            # Preprocessed data
+│   ├── result/          # Output results (CSV, TXT)
 ├── src/
-│   ├── data.py          # Mengambil data harga kripto
-│   ├── preprocess.py    # Membersihkan dan mempersiapkan data
-│   ├── analyze.py       # Script utama untuk analisis & optimasi
-├── requirements.txt     # Dependensi Python
-└── README.md            # Dokumentasi proyek
+│   ├── data.py          # Fetch crypto price data
+│   ├── preprocess.py    # Clean and prepare the data
+│   ├── analyze.py       # Main script for analysis & optimization
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
 ```
 
-## 🛠️ Instalasi
+---
+
+## 🛠️ Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/billycemerson/Crypto-Portfolio.git
 cd Crypto-Portfolio
 pip install -r requirements.txt
 ```
 
-## 📈 Cara Penggunaan
+---
 
-1. **Ambil data historis kripto:**
+## 📈 How to Use
 
-```bash
-python src/data.py
-```
-
-2. **Preproses data:**
+1. **Fetch historical crypto data:**
 
 ```bash
-python src/preprocess.py
+cd src
+python data.py
 ```
 
-3. **Analisis dan optimasi portofolio:**
+2. **Preprocess the data:**
 
 ```bash
-python src/analyze.py
+python preprocess.py
 ```
+
+3. **Analyze and optimize the portfolio:**
+
+```bash
+python analyze.py
+```
+
+---
 
 ## 📁 Output
 
-* Kombinasi portofolio terbaik: `data/result/portfolio_combinations.csv`
-* Ringkasan hasil analisis: `data/result/result_analyze.txt`
+* Best portfolio combinations: `data/result/portfolio_combinations.csv`
+* Analysis summary: `data/result/result_analyze.txt`
 
-## 📊 Contoh Hasil
+---
 
-**Portofolio terbaik (2 aset, 1 minggu):**
+## 📊 Sample Results
 
-* Aset: BNB, DOGE
-* Bobot: \[0.5, 0.5]
+**Best Portfolio (2 assets, 1 week):**
+
+* Assets: BNB, DOGE
+* Weights: \[0.5, 0.5]
 * Sharpe Ratio: 0.0202
 * CVaR: 0.3036
 
-**Portofolio terbaik (3 aset, 4 minggu):**
+**Best Portfolio (3 assets, 4 weeks):**
 
-* Aset: ADA, BTC, SOL
-* Bobot: \[0.70, 0.01, 0.29]
+* Assets: ADA, BTC, SOL
+* Weights: \[0.70, 0.01, 0.29]
 * Sharpe Ratio: 0.0344
 * CVaR: 24.8856
 
-## 🧩 Dependensi
+---
 
-Pastikan Anda telah menginstal:
+## 🧩 Dependencies
+
+Make sure the following packages are installed:
 
 * `yfinance`
 * `pandas`
 * `numpy`
 * `scipy`
-* `arch-py`
+* `arch`
 * `copulas`
 
-## 📄 Lisensi
+---
 
-Lisensi MIT. Lihat file `LICENSE` untuk informasi selengkapnya.
+## 📄 License
+
+Licensed under the MIT License. See the `LICENSE` file for more details.
 
 ---
