@@ -1,0 +1,86 @@
+Crypto Portfolio Analysis Results
+==================================================
+
+Best Portfolio for 2 assets (1_week):
+Assets: BNB, DOGE
+Weights: [0.5, 0.5]
+Sharpe Ratio: 0.0202
+CVaR: 0.3036
+--------------------------------------------------
+
+Best Portfolio for 3 assets (1_week):
+Assets: BNB, DOGE, XRP
+Weights: [0.29, 0.7, 0.01]
+Sharpe Ratio: 0.0190
+CVaR: 0.3671
+--------------------------------------------------
+
+Best Portfolio for 4 assets (1_week):
+Assets: BNB, BTC, DOGE, XRP
+Weights: [0.28, 0.01, 0.7, 0.01]
+Sharpe Ratio: 0.0189
+CVaR: 0.3675
+--------------------------------------------------
+
+Best Portfolio for 2 assets (2_week):
+Assets: LTC, MATIC
+Weights: [0.4971, 0.5029]
+Sharpe Ratio: 0.0123
+CVaR: 0.4240
+--------------------------------------------------
+
+Best Portfolio for 3 assets (2_week):
+Assets: BNB, LTC, MATIC
+Weights: [0.4744, 0.01, 0.5156]
+Sharpe Ratio: 0.0096
+CVaR: 0.3989
+--------------------------------------------------
+
+Best Portfolio for 4 assets (2_week):
+Assets: BNB, LTC, MATIC, XRP
+Weights: [0.01, 0.28, 0.7, 0.01]
+Sharpe Ratio: 0.0121
+CVaR: 0.4663
+--------------------------------------------------
+
+Best Portfolio for 2 assets (3_week):
+Assets: ADA, DOGE
+Weights: [0.3, 0.7]
+Sharpe Ratio: 0.0345
+CVaR: 0.7510
+--------------------------------------------------
+
+Best Portfolio for 3 assets (3_week):
+Assets: ADA, DOGE, SOL
+Weights: [0.29, 0.7, 0.01]
+Sharpe Ratio: 0.0345
+CVaR: 0.7468
+--------------------------------------------------
+
+Best Portfolio for 4 assets (3_week):
+Assets: ADA, BNB, DOGE, SOL
+Weights: [0.28, 0.01, 0.7, 0.01]
+Sharpe Ratio: 0.0344
+CVaR: 0.7409
+--------------------------------------------------
+
+Best Portfolio for 2 assets (4_week):
+Assets: ADA, SOL
+Weights: [0.7, 0.3]
+Sharpe Ratio: 0.0344
+CVaR: 24.8870
+--------------------------------------------------
+
+Best Portfolio for 3 assets (4_week):
+Assets: ADA, BTC, SOL
+Weights: [0.7, 0.01, 0.29]
+Sharpe Ratio: 0.0344
+CVaR: 24.8856
+--------------------------------------------------
+
+Best Portfolio for 4 assets (4_week):
+Assets: ADA, BTC, ETH, SOL
+Weights: [0.7, 0.01, 0.01, 0.28]
+Sharpe Ratio: 0.0344
+CVaR: 24.8843
+--------------------------------------------------
