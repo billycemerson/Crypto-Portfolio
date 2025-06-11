@@ -1,77 +1,93 @@
-Crypto Portfolio Optimization
+# Crypto Portfolio Optimization
 
-This project uses **GARCH-Copula Markowitz** methodology to find the optimal portfolio of 10 cryptocurrencies for short-term investments (1-4 weeks). The analysis generates combinations of 2, 3, and 4 assets, evaluating their performance based on metrics like Sharpe Ratio and Conditional Value at Risk (CVaR).
+Sebuah framework analisis untuk mengoptimalkan portofolio kripto jangka pendek (1–4 minggu) menggunakan pendekatan **GARCH**, **t-Copula**, dan **Markowitz Optimization**.
 
-Features
-- GARCH Model: Models the volatility of individual cryptocurrencies.
-- Copula Simulation: Simulates multivariate returns using a t-Copula.
-- Markowitz Optimization: Finds the optimal portfolio weights for maximizing Sharpe Ratio while minimizing risk.
-- Short-Term Horizons: Analyzes investment periods of 1, 2, 3, and 4 weeks.
-- Portfolio Combinations: Evaluates combinations of 2, 3, and 4 assets.
+## 🚀 Fitur Utama
 
-Project Structure
+* **GARCH Modeling** – Mengestimasi volatilitas harian aset kripto.
+* **t-Copula Simulation** – Menangkap korelasi kompleks antar aset.
+* **Markowitz Optimization** – Menentukan bobot optimal dengan mempertimbangkan Sharpe Ratio dan CVaR.
+* **Analisis Jangka Pendek** – Fokus pada horizon investasi 1, 2, 3, dan 4 minggu.
+* **Kombinasi Portofolio** – Evaluasi semua kombinasi dari 2, 3, dan 4 aset.
+
+## 🗂️ Struktur Proyek
+
+```
 Crypto-Portfolio/
 ├── data/
-│   ├── crypto/          # Raw cryptocurrency data
-│   ├── prep/            # Preprocessed data
-│   ├── result/          # Analysis results (CSV, TXT)
+│   ├── crypto/          # Data mentah kripto
+│   ├── prep/            # Data yang telah dipreproses
+│   ├── result/          # Hasil analisis (CSV, TXT, grafik)
 ├── src/
-│   ├── data.py          # Script to fetch cryptocurrency data
-│   ├── preprocess.py    # Script to preprocess data
-│   ├── analyze.py       # Main analysis script
-├── requirements.txt     # Python dependencies
-└── README.txt           # Project documentation
+│   ├── data.py          # Mengambil data harga kripto
+│   ├── preprocess.py    # Membersihkan dan mempersiapkan data
+│   ├── analyze.py       # Script utama untuk analisis & optimasi
+├── requirements.txt     # Dependensi Python
+└── README.md            # Dokumentasi proyek
+```
 
-Installation
+## 🛠️ Instalasi
 
-1. Clone the repository:
-   git clone <repository-url>
-   cd Crypto-Portfolio
+```bash
+git clone <repository-url>
+cd Crypto-Portfolio
+pip install -r requirements.txt
+```
 
-2. Install the required Python packages:
-   pip install -r requirements.txt
+## 📈 Cara Penggunaan
 
-Usage
+1. **Ambil data historis kripto:**
 
-Step 1: Fetch Cryptocurrency Data
-Run the data.py script to download historical cryptocurrency data:
+```bash
 python src/data.py
+```
 
-Step 2: Preprocess the Data
-Run the preprocess.py script to clean and prepare the data:
+2. **Preproses data:**
+
+```bash
 python src/preprocess.py
+```
 
-Step 3: Analyze and Optimize Portfolios
-Run the analyze.py script to perform portfolio optimization:
+3. **Analisis dan optimasi portofolio:**
+
+```bash
 python src/analyze.py
+```
 
-Outputs
-- Portfolio Combinations: Saved in data/result/portfolio_combinations.csv.
-- Analysis Summary: Saved in data/result/result_analyze.txt.
+## 📁 Output
 
-Example Results
-- Best Portfolio for 2 assets (1_week):
-  - Assets: BNB, DOGE
-  - Weights: [0.5, 0.5]
-  - Sharpe Ratio: 0.0202
-  - CVaR: 0.3036
+* Kombinasi portofolio terbaik: `data/result/portfolio_combinations.csv`
+* Ringkasan hasil analisis: `data/result/result_analyze.txt`
 
-- Best Portfolio for 3 assets (4_week):
-  - Assets: ADA, BTC, SOL
-  - Weights: [0.7, 0.01, 0.29]
-  - Sharpe Ratio: 0.0344
-  - CVaR: 24.8856
+## 📊 Contoh Hasil
 
-Dependencies
-The project requires the following Python libraries:
-- yfinance
-- pandas
-- numpy
-- scipy
-- arch-py
-- copulas
+**Portofolio terbaik (2 aset, 1 minggu):**
 
-Install them using the requirements.txt file.
+* Aset: BNB, DOGE
+* Bobot: \[0.5, 0.5]
+* Sharpe Ratio: 0.0202
+* CVaR: 0.3036
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+**Portofolio terbaik (3 aset, 4 minggu):**
+
+* Aset: ADA, BTC, SOL
+* Bobot: \[0.70, 0.01, 0.29]
+* Sharpe Ratio: 0.0344
+* CVaR: 24.8856
+
+## 🧩 Dependensi
+
+Pastikan Anda telah menginstal:
+
+* `yfinance`
+* `pandas`
+* `numpy`
+* `scipy`
+* `arch-py`
+* `copulas`
+
+## 📄 Lisensi
+
+Lisensi MIT. Lihat file `LICENSE` untuk informasi selengkapnya.
+
+---
